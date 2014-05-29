@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FEEE"
+    tools:context="com.example.myapplication.app.MainActivity$PlaceholderFragment">
+
+   <include layout="@layout/fragment_title" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:gravity="center_horizontal"
+        android:text="今日更新（每日跟新10条）"
+        android:drawableLeft="@drawable/title_greed"
+        android:background="@drawable/heard_hint_bg"
+        />
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:background="#4999"
+        />
+<!--
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#F0F0"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/good"
+        />
+ -->
+    <include layout="@layout/bottom_login"/>
+ </RelativeLayout>
